@@ -1,0 +1,44 @@
+.header__container {
+  padding: 30px 24px;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  border: none;
+
+  padding: 0;
+}
+
+.container_additional {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  width: 24px;
+  height: 24px;
+
+  margin-right: 26px;
+}
+
+.profile-btn {
+  width: 28px;
+  height: 28px;
+
+  background-color: #0f756b;
+  border-radius: 50%;
+}
+
+.company-logo {
+  display: block;
+  text-align: center;
+}
