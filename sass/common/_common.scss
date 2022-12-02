@@ -40,11 +40,25 @@ p {
 }
 
 .container {
+  padding: 0px 15px;
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 // font-family: 'Open Sans';
 // font-style: normal;
 // font-weight: 400;
@@ -57,3 +71,4 @@ p {
 // /* gray1 */
 
 // color: #333333;
+

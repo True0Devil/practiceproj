@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49044"
+      rel="stylesheet"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -128,7 +133,7 @@
       <div class="container">
         <h1 class="hero__title">Take your career to the next level.</h1>
         <p class="hero__subtitle">With indispensable courses</p>
-        <img src="./imgs/bg.jpg" alt="" class="hero__img"/>
+        <img src="./imgs/bg.jpg" alt="" class="hero__img" />
         <p class="hero__text">
           Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum,
           dignissim pharetra. Aliquam Lorem ipsum dolor sit at
@@ -137,115 +142,137 @@
 
         <ul class="buttons-container">
           <li><button type="button" class="btn btn-alt">Exams</button></li>
-          <li><button type="button" class="btn btn-main">Our Courses</button></li>
+          <li>
+            <button type="button" class="btn btn-main">Our Courses</button>
+          </li>
         </ul>
       </div>
     </section>
 
-    <!-- font-family: 'Inter', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; -->
-
-    <section>
+    <section class="section form">
       <div class="container">
-        <form action="">
-          <label>
-            Full name
-            <input type="text" name="name" placeholder="Full name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="Email" />
-          </label>
-          <label>
-            Phone number
-            <input type="tel" name="tel" placeholder="Phone number" />
-          </label>
-          <label for="course">
-            Select a course
-            <select name="course" id="course">
-              <option value=""></option>
-              <option value="pre">Pre-Intermediate</option>
-              <option value="itm">Intermediate</option>
-              <option value="upper">Upper-Intermediate</option>
-              <option value="adv">Advanced</option>
-            </select>
-          </label>
-          <button type="submit">Apply now</button>
+        <h2 class="section__form--title">Enroll for a couse now</h2>
+        <form action="" class="form">
+          <label for="name" class="visually-hidden"> Full name </label>
+          <input
+            class="form__input"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Full name"
+          />
+          <label for="email" class="visually-hidden"> Email </label>
+          <input
+            class="form__input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label for="phone" class="visually-hidden"> Phone number </label>
+          <input
+            class="form__input"
+            id="phone"
+            type="tel"
+            name="tel"
+            placeholder="Phone number"
+          />
+
+          <label for="course" class="visually-hidden"> Select a course </label>
+          <input
+            class="form__input datalist"
+            list="courses"
+            name="courses"
+            id="course"
+            placeholder="Select a course"
+          />
+          <datalist id="courses">
+            <option>Pre-Intermediate</option>
+            <option>Intermediate</option>
+            <option>Upper-Intermediate</option>
+            <option>Advanced</option>
+          </datalist>
+
+          <button type="submit" class="form__button">Apply now</button>
         </form>
       </div>
     </section>
 
-    <section>
-      <h2>What we offer</h2>
-      <ul>
-        <li>
-          <h3>Online Courses</h3>
-          <p>Our Course are the best among others</p>
-          <img src="./imgs/li1.jpg" alt="girl working on the computer" />
-          <p>
-            Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum,
-            dignissim pharetra. Aliquam Lorem ipsum dolor sit at, consectetur
-            adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
-          </p>
-          <button type="button">Explore our courses</button>
-          <h4>Trending Courses</h4>
-          <ul>
-            <li><img src="./imgs/subli.jpg" alt="" /></li>
-            <li><img src="./imgs/subli2.jpg" alt="" /></li>
-            <li><img src="./imgs/subli3.jpg" alt="" /></li>
-            <li><img src="./imgs/subli.jpg" alt="" /></li>
-          </ul>
-        </li>
-        <li>
-          <h3>Online Exams</h3>
-          <p>Our Exams prepare you for job opportunity</p>
-          <img src="./imgs/li2.jpg" alt="woman writing with a pen" />
-          <p>
-            Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum,
-            dignissim pharetra. Aliquam Lorem ipsum dolor sit at, consectetur
-            adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
-          </p>
-          <button type="button">Explore Exams</button>
-          <h4>Test your ability here</h4>
-          <ul>
-            <li><img src="./imgs/subli.jpg" alt="" /></li>
-            <li><img src="./imgs/subli2.jpg" alt="" /></li>
-            <li><img src="./imgs/subli3.jpg" alt="" /></li>
-            <li><img src="./imgs/subli.jpg" alt="" /></li>
-          </ul>
-        </li>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title">What we offer</h2>
+        <ul>
+          <li>
+            <h3 class="benefits__item--title">Online Courses</h3>
+            <h4 class="benefits__item--subtitle">Our Course are the best among others</h4>
+            <img src="./imgs/li1.jpg" alt="girl working on the computer" class="benefits__img"/>
+            <p class="benefits__descr">
+              Lorem ipsum dolor sit at, consectetur adipielit. Facilisi
+              fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at,
+              consectetur adipielit. Facilisi fermentum, dignissim pharetra.
+              Aliquam
+            </p>
+            <button type="button" class="benefits__button">Explore our courses</button>
+            <h4>Trending Courses</h4>
+            <ul>
+              <li><img src="./imgs/subli.jpg" alt="" /></li>
+              <li><img src="./imgs/subli2.jpg" alt="" /></li>
+              <li><img src="./imgs/subli3.jpg" alt="" /></li>
+              <li><img src="./imgs/subli.jpg" alt="" /></li>
+            </ul>
+          </li>
+          <li>
+            <h3>Online Exams</h3>
+            <h4>Our Exams prepare you for job opportunity</h4>
+            <img src="./imgs/li2.jpg" alt="woman writing with a pen" />
+            <p>
+              Lorem ipsum dolor sit at, consectetur adipielit. Facilisi
+              fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at,
+              consectetur adipielit. Facilisi fermentum, dignissim pharetra.
+              Aliquam
+            </p>
+            <button type="button">Explore Exams</button>
+            <h5>Test your ability here</h5>
+            <ul>
+              <li><img src="./imgs/subli.jpg" alt="" /></li>
+              <li><img src="./imgs/subli2.jpg" alt="" /></li>
+              <li><img src="./imgs/subli3.jpg" alt="" /></li>
+              <li><img src="./imgs/subli.jpg" alt="" /></li>
+            </ul>
+          </li>
 
-        <li>
-          <h3>Publications</h3>
-          <p>Publications for best authors</p>
-          <img src="./imgs/li3.jpg" alt="journal page" />
-          <p>
-            Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum,
-            dignissim pharetra. Aliquam Lorem ipsum dolor sit at, consectetur
-            adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
-          </p>
-          <button type="button">See publications</button>
-          <ul>
-            <li>
-              <h5>NATURE of Science</h5>
-              <img src="./imgs/pub1.jpg" alt="" />
-            </li>
-            <li>
-              <h5>2022 Astro Report</h5>
-              <img src="./imgs/pub2.jpg" alt="" />
-            </li>
-            <li>
-              <h5>Ata Analysis With Python</h5>
-              <img src="./imgs/pub3.jpg" alt="" />
-            </li>
-            <li>
-              <h5></h5>
-              <img src="./imgs/pub.jpg" alt="" />
-            </li>
-          </ul>
-        </li>
-      </ul>
+          <li>
+            <h3>Publications</h3>
+            <h4>Publications for best authors</h4>
+            <img src="./imgs/li3.jpg" alt="journal page" />
+            <p>
+              Lorem ipsum dolor sit at, consectetur adipielit. Facilisi
+              fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at,
+              consectetur adipielit. Facilisi fermentum, dignissim pharetra.
+              Aliquam
+            </p>
+            <button type="button">See publications</button>
+            <ul>
+              <li>
+                <h5>NATURE of Science</h5>
+                <img src="./imgs/pub1.jpg" alt="" />
+              </li>
+              <li>
+                <h5>2022 Astro Report</h5>
+                <img src="./imgs/pub2.jpg" alt="" />
+              </li>
+              <li>
+                <h5>Ata Analysis With Python</h5>
+                <img src="./imgs/pub3.jpg" alt="" />
+              </li>
+              <li>
+                <h5></h5>
+                <img src="./imgs/pub1.jpg" alt="" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section>
