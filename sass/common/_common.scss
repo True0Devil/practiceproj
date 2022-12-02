@@ -12,7 +12,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -27,6 +28,10 @@ ul {
 
 p {
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 @font-face {
@@ -72,3 +77,12 @@ p {
 
 // color: #333333;
 
+.section__title {
+font-weight: 700;
+font-size: 32px;
+line-height: 0.62;
+letter-spacing: -0.02em;
+
+color: #333333;
+text-align: center;
+}

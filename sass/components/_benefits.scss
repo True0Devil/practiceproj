@@ -3,15 +3,11 @@
 }
 
 .benefits__title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 0.62;
-  letter-spacing: -0.02em;
-
-  color: #333333;
-
   margin-bottom: 48px;
-  text-align: center;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 70px;
 }
 
 .benefits__item--title {
@@ -68,4 +64,71 @@
   color: #1b353d;
 
   margin-left: auto;
+  margin-bottom: 36px;
+}
+
+.about__list--title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 0.83;
+
+  letter-spacing: -0.02em;
+
+  color: #333333;
+
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.about__list {
+  display: flex;
+  gap: 8px;
+
+  overflow: hidden;
+}
+
+.about__item {
+  position: relative;
+
+  overflow: visible;
+}
+
+.about__title {
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 11.2203px;
+  line-height: 0.84;
+
+  color: #ffffff;
+}
+
+.div_for_pos {
+  position: relative;
+}
+
+.scroll_btn {
+  position: absolute;
+
+  right: 4px;
+  bottom: 42px;
+
+  width: 26px;
+  height: 26px;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3.2186px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 128.744px;
+  border: none;
+
+  & svg {
+    margin: auto;
+  }
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
 }

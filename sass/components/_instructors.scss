@@ -1,0 +1,64 @@
+.instructors {
+  padding: 70px 0;
+
+  & .section__title {
+    margin-bottom: 33px;
+  }
+}
+
+.instructors__list {
+  margin-top: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  //   justify-content: space-evenly;
+}
+
+.instructors__item {
+  padding: 40px 17px;
+  flex-basis: calc((100% - 55px) / 2);
+
+  &:not(:nth-child(2n)) {
+    margin-right: 55px;
+  }
+
+  //   &:not(:nth-last-child((-n+2))) {
+  //     margin-bottom: 17px;
+  //   }
+
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 17px;
+  }
+}
+
+.instructors__photo {
+  margin: 0 auto 18px;
+
+  border-radius: 24.0741px;
+}
+
+.instructor__position {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 12.2932px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #495057;
+
+  line-height: 15px;
+
+  margin-bottom: 4px;
+}
+
+.instructor__name {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16.3909px;
+
+  text-align: center;
+
+  color: #000000;
+
+  line-height: 20px;
+}
